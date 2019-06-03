@@ -1,18 +1,29 @@
 <html>
 	<head>
+		<link href="styles/style.css" rel="stylesheet" type="text/css">
 		<meta charset="utf-8">
 		<title> Leilão </title>
 	</head>
-	<body>
+	<body bgcolor=gray>
+	<style>
+	p {
+		border-style: solid;
+		border-top-width: 29px;
+	}
+	</style>
 		<h1>
 			 <strong>Sabbath Auctions</strong>
-			 <em>leilões On-line</em>
+			 <em style="font-style: italic; color: white;">leilões On-line</em>
 		</h1>
 		<form method="POST" action="login.php">
 			<label>Login:</label><input type="text" placeholder="insira seu login" name="login" id="login"><br>
 			<label>Senha:</label><input type="password" placeholder="insira sua senha" name="senha" id="senha"><br>
 			<input type="submit" value="entrar" id="entrar" name="entrar"><br>
-			<a href="cadastro.html">Cadastre-se</a>
+			<a href="cadastro.html">Cadastre-se </a>
 		</form>
+		<audio control autoplay>
+			<source src="Cesar Menotti, Fabiano - Leilão (1).mp3" type="audio/mpeg">
+			<source src="Cesar Menotti, Fabiano - Leilão (1).ogg" type="audio/ogg">
+		</audio>
 	</body>
 </html>
