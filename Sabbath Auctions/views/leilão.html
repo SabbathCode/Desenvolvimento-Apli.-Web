@@ -15,8 +15,17 @@
 			 <strong>Sabbath Auctions</strong>
 			 <em style="font-style: italic; color: white;">leilões On-line</em>
 		</h1>
-		<form action="/action_page.php" method="post">
+		<form action="/action_page.php" method="POST">
 			<textarea></textarea><br>
-			<input type="text" placeholder="envie seu lance" name="lance"><br>
+			<input type="text" placeholder="envie seu lance" name="lance" id="lanceInput"><br>
 			<input type="submit" name="enviar lance">
+			</form>
+    		{% if query %}
+    		lances de {{ query }}
+    		{% endif %}
+    		{% for post in posts %}
 		</form>
+			<p>
+			lance: <a href="{{ url_for('search', text=post.name) }}">{{ post.name }}</a></br>
+            Message: {{ post.lance }}
+			</p>
